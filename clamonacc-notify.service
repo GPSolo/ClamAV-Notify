@@ -1,0 +1,10 @@
+[Unit]
+Description=ClamAV Desktop Notification Bridge
+
+[Service]
+ExecStart=%h/.local/bin/clamav-notify.sh
+Restart=always
+
+[Install]
+WantedBy=default.target
+
