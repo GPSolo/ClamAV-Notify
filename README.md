@@ -36,6 +36,7 @@ sudo pacman -S clamav
 
 sudo systemctl enable --now clamav-freshclam
 sudo systemctl enable --now clamav-daemon
+sudo systemctl enable --now clamav-clamonacc
 
 cp clamonacc-notify.service ~/.config/systemd/user/
 cp clamav-notify.sh ~/.local/bin/
